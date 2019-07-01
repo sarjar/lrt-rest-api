@@ -1,0 +1,13 @@
+<!-- Nav tabs -->
+<ul class="nav justify-content-center">
+  <li class="nav-item" *ngFor="let channel of channels; let i = index">
+    <a
+      class="nav-link"
+      data-toggle="tab"
+      [routerLink]="i"
+      routerLinkActive="active"
+      >{{ channel.name }}
+    </a>
+  </li>
+</ul>
+

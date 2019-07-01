@@ -1,0 +1,14 @@
+<div class="card tab-content" *ngIf="channel">
+  <div class="card-body tab-pane active">
+    <h4 class="card-title">
+      <strong>{{ channel.time_start }} - {{ channel.time_end }}</strong>
+    </h4>
+    <h4 class="card-title">{{ channel.title }}</h4>
+    <p class="card-text">{{ channel.description }}</p>
+    <a
+      href="https://www.lrt.lt{{ channel.href }}"
+      class="btn btn-primary card-link"
+      >TIESIOGIAI</a
+    >
+  </div>
+</div>
